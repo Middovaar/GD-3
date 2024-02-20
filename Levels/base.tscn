@@ -1,3 +1,45 @@
-[gd_scene format=3 uid="uid://bwf8ba22xb5jp"]
+[gd_scene load_steps=5 format=3 uid="uid://bwf8ba22xb5jp"]
 
-[node name="base" type="Node2D"]
+[ext_resource type="Script" path="res://Scripts/Plaert.gd" id="1_gyi5m"]
+[ext_resource type="Texture2D" uid="uid://b12e6ohb64wgg" path="res://Sprites/TestPlayer.png" id="1_q71ub"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_evjo8"]
+size = Vector2(38, 38)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_78x3r"]
+
+[node name="Base" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(200, 403)
+scale = Vector2(2, 2)
+script = ExtResource("1_gyi5m")
+
+[node name="TestPlayer" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(19, 19)
+scale = Vector2(0.126667, 0.126667)
+texture = ExtResource("1_q71ub")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(19, 19)
+shape = SubResource("RectangleShape2D_evjo8")
+
+[node name="RoofCollision" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RoofCollision"]
+position = Vector2(256, 0)
+rotation = 3.14159
+shape = SubResource("WorldBoundaryShape2D_78x3r")
+
+[node name="Floor Collision" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor Collision"]
+position = Vector2(232, 1080)
+shape = SubResource("WorldBoundaryShape2D_78x3r")
+
+[node name="LeftWallCollision" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWallCollision"]
+position = Vector2(0, 164)
+rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_78x3r")
