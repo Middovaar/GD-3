@@ -245,6 +245,7 @@ axis_stretch_horizontal = 1
 
 [node name="CityBuildings" type="NinePatchRect" parent="Background/CityWall/CitySky"]
 z_index = 1
+layout_mode = 0
 offset_top = 22.0
 offset_right = 8826.0
 offset_bottom = 1116.0
@@ -286,6 +287,7 @@ offset_right = -150.0
 offset_bottom = 69.0
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Background/Text/FinLabel"]
+layout_mode = 0
 offset_left = 37726.0
 offset_top = 773.0
 offset_right = 38972.0
@@ -450,7 +452,6 @@ texture = ExtResource("16_ceus7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Foreground/BackgroundObj/BackgSofas/Sofa2/StaticBody2D"]
 position = Vector2(13.0001, -14.001)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_8ib3d")
 
 [node name="Sofa3" type="Sprite2D" parent="Foreground/BackgroundObj/BackgSofas"]
@@ -463,7 +464,6 @@ texture = ExtResource("16_ceus7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Foreground/BackgroundObj/BackgSofas/Sofa3/StaticBody2D"]
 position = Vector2(13.0001, -14.001)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_8ib3d")
 
 [node name="Chair" type="Sprite2D" parent="Foreground/BackgroundObj/BackgSofas"]

@@ -104,7 +104,7 @@ func _physics_process(delta):
 			await get_tree().create_timer(ShakeTimestep).timeout
 			$Player.position = Vector2(10, -20)
 		
-		HowManyTimesWeveTriedEscapingFromTheCage += 0.1
+		HowManyTimesWeveTriedEscapingFromTheCage += 0.2
 		
 		if HowManyTimesWeveTriedEscapingFromTheCage >= 5:
 			Captured = false
