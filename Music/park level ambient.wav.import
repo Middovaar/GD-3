@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://wla1pk850icc"
+path="res://.godot/imported/park level ambient.wav-f58c893aedc9d1c4b5dab784acfc915c.sample"
+
+[deps]
+
+source_file="res://Music/park level ambient.wav"
+dest_files=["res://.godot/imported/park level ambient.wav-f58c893aedc9d1c4b5dab784acfc915c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
